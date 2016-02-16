@@ -15,16 +15,12 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="branding">
-      <h1>Pbnj</h1>
-    </header>
-
     <div class="main">
       <%= yield %>
     </div>
 
-    <footer class="branding">
-      <small>&copy; <%= Time.now.year %></small>
+    <footer>
+      <small><%= Time.now.year %></small>
     </footer>
   </div>
 
