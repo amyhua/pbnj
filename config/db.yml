@@ -1,0 +1,6 @@
+# Sequel Database Configuration
+
+development: "postgres://amy@localhost/pbnj_development"
+test: "postgres://amy@localhost/pbnj_test"
+production: "postgres://amy@localhost/pbnj_production"
+
