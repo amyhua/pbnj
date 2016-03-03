@@ -13,6 +13,13 @@ require "find"
   }
 end
 
+# load sass
+require 'sass/plugin/rack'
+
+Sass::Plugin.options[:style] = :compressed
+Sass::Plugin.options[:load_paths] = ['public/stylesheets/sass/application.sass']
+use Sass::Plugin::Rack
+
 # Load app
 require "pbnj"
 run Pbnj
